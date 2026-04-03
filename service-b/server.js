@@ -1,12 +1,20 @@
 const express = require('express');
 const axios = require('axios');
+const https = require('https');
+const fs = require('fs');
+const path = require('path');
 const Logger = require('./logger');
 const Database = require('./db');
 
 const app = express();
-const PORT = 3010;
+const PORT = 3031;
 const logger = new Logger('Service-B');
 const db = new Database('Service-B');
+const httpsAgent = new https.Agent({ rejectUnauthorized: false });
+const sslOptions = {
+  key: fs.readFileSync(path.join(__dirname, '..', 'certs', 'key.pem')),
+  cert: fs.readFileSync(path.join(__dirname, '..', 'certs', 'cert.pem'))
+};
 
 app.use(express.json());
 
@@ -24,7 +32,7 @@ app.post('/ping', async (req, res) => {
   res.json(response);
 });
 
-const SERVICE_C_URL = 'http://localhost:3020/ping';
+const SERVICE_C_URL = 'https://localhost:3032/ping';
 
 async function pingServiceC() {
   logger.pingSent('Service C');
@@ -37,7 +45,7 @@ async function pingServiceC() {
   logger.sendMessage('Service C', '/ping', payload);
 
   try {
-    const response = await axios.post(SERVICE_C_URL, payload);
+    const response = await axios.post(SERVICE_C_URL, payload, { httpsAgent });
     logger.receiveResponse('Service C', response.data);
     await db.logOutgoing('Service C', '/ping', payload, response.data);
   } catch (error) {
@@ -49,7 +57,7 @@ async function pingServiceC() {
 async function start() {
   await db.init();
   
-  app.listen(PORT, () => {
+  https.createServer(sslOptions, app).listen(PORT, () => {
     logger.serviceStarted(PORT);
   });
 

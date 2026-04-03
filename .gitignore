@@ -1,0 +1,14 @@
+# TLS Certificates (keep private)
+certs/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

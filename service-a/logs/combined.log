@@ -86,3 +86,627 @@
 [2026-04-02T13:51:02.244Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-02T13:51:02.244Z","from":"Service A"}}
 [2026-04-02T13:51:02.254Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
 [2026-04-02T13:51:02.256Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-02T13:51:02.249Z"}}
+[2026-04-03T04:21:04.122Z] [Service-A] [INFO] [MAIN] Service A started - pinging Service B and Service C every 10 seconds
+[2026-04-03T04:21:04.124Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:21:04.124Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:04.124Z","from":"Service A"}}
+[2026-04-03T04:21:04.139Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:21:04.140Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:04.140Z","from":"Service A"}}
+[2026-04-03T04:21:04.142Z] [Service-A] [INFO] [SERVICE] Service-A started | {"port":3030}
+[2026-04-03T04:21:04.165Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:21:04.159Z"}}
+[2026-04-03T04:21:04.168Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:21:04.160Z"}}
+[2026-04-03T04:21:11.322Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:21:11.311Z"}}
+[2026-04-03T04:21:11.323Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:21:11.323Z"}}
+[2026-04-03T04:21:14.128Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:21:14.131Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:14.131Z","from":"Service A"}}
+[2026-04-03T04:21:14.135Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:21:14.136Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:14.136Z","from":"Service A"}}
+[2026-04-03T04:21:14.150Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:21:14.146Z"}}
+[2026-04-03T04:21:14.151Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:21:14.145Z"}}
+[2026-04-03T04:21:21.325Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:21:21.319Z"}}
+[2026-04-03T04:21:21.326Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:21:21.326Z"}}
+[2026-04-03T04:21:24.135Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:21:24.138Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:24.138Z","from":"Service A"}}
+[2026-04-03T04:21:24.144Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:21:24.145Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:24.145Z","from":"Service A"}}
+[2026-04-03T04:21:24.165Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:21:24.157Z"}}
+[2026-04-03T04:21:24.168Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:21:24.158Z"}}
+[2026-04-03T04:21:31.327Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:21:31.323Z"}}
+[2026-04-03T04:21:31.328Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:21:31.328Z"}}
+[2026-04-03T04:21:34.136Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:21:34.137Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:34.137Z","from":"Service A"}}
+[2026-04-03T04:21:34.138Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:21:34.139Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:34.139Z","from":"Service A"}}
+[2026-04-03T04:21:34.151Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:21:34.148Z"}}
+[2026-04-03T04:21:34.153Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:21:34.146Z"}}
+[2026-04-03T04:21:41.327Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:21:41.323Z"}}
+[2026-04-03T04:21:41.328Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:21:41.328Z"}}
+[2026-04-03T04:21:44.145Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:21:44.147Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:44.147Z","from":"Service A"}}
+[2026-04-03T04:21:44.149Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:21:44.150Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:44.150Z","from":"Service A"}}
+[2026-04-03T04:21:44.161Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:21:44.158Z"}}
+[2026-04-03T04:21:44.163Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:21:44.157Z"}}
+[2026-04-03T04:21:51.337Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:21:51.331Z"}}
+[2026-04-03T04:21:51.337Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:21:51.337Z"}}
+[2026-04-03T04:21:54.160Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:21:54.162Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:54.162Z","from":"Service A"}}
+[2026-04-03T04:21:54.166Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:21:54.168Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:21:54.168Z","from":"Service A"}}
+[2026-04-03T04:21:54.182Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:21:54.178Z"}}
+[2026-04-03T04:21:54.183Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:21:54.179Z"}}
+[2026-04-03T04:22:01.352Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:22:01.346Z"}}
+[2026-04-03T04:22:01.354Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:22:01.354Z"}}
+[2026-04-03T04:22:04.178Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:22:04.181Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:04.181Z","from":"Service A"}}
+[2026-04-03T04:22:04.184Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:22:04.186Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:04.186Z","from":"Service A"}}
+[2026-04-03T04:22:04.201Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:22:04.194Z"}}
+[2026-04-03T04:22:04.202Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:22:04.194Z"}}
+[2026-04-03T04:22:11.349Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:22:11.344Z"}}
+[2026-04-03T04:22:11.350Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:22:11.350Z"}}
+[2026-04-03T04:22:14.190Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:22:14.193Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:14.192Z","from":"Service A"}}
+[2026-04-03T04:22:14.197Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:22:14.198Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:14.198Z","from":"Service A"}}
+[2026-04-03T04:22:14.210Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:22:14.203Z"}}
+[2026-04-03T04:22:14.212Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:22:14.204Z"}}
+[2026-04-03T04:22:21.362Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:22:21.353Z"}}
+[2026-04-03T04:22:21.363Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:22:21.363Z"}}
+[2026-04-03T04:22:24.197Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:22:24.199Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:24.199Z","from":"Service A"}}
+[2026-04-03T04:22:24.204Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:22:24.205Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:24.205Z","from":"Service A"}}
+[2026-04-03T04:22:24.216Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:22:24.208Z"}}
+[2026-04-03T04:22:24.217Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:22:24.209Z"}}
+[2026-04-03T04:22:31.372Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:22:31.364Z"}}
+[2026-04-03T04:22:31.373Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:22:31.373Z"}}
+[2026-04-03T04:22:34.213Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:22:34.216Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:34.216Z","from":"Service A"}}
+[2026-04-03T04:22:34.220Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:22:34.222Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:34.221Z","from":"Service A"}}
+[2026-04-03T04:22:34.269Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:22:34.227Z"}}
+[2026-04-03T04:22:34.447Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:22:34.227Z"}}
+[2026-04-03T04:22:41.373Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:22:41.367Z"}}
+[2026-04-03T04:22:41.374Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:22:41.374Z"}}
+[2026-04-03T04:22:44.225Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:22:44.226Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:44.226Z","from":"Service A"}}
+[2026-04-03T04:22:44.228Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:22:44.228Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:44.228Z","from":"Service A"}}
+[2026-04-03T04:22:44.238Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:22:44.233Z"}}
+[2026-04-03T04:22:44.240Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:22:44.232Z"}}
+[2026-04-03T04:22:51.388Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:22:51.381Z"}}
+[2026-04-03T04:22:51.389Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:22:51.389Z"}}
+[2026-04-03T04:22:54.240Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:22:54.242Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:54.242Z","from":"Service A"}}
+[2026-04-03T04:22:54.245Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:22:54.246Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:22:54.246Z","from":"Service A"}}
+[2026-04-03T04:22:54.257Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:22:54.251Z"}}
+[2026-04-03T04:22:54.258Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:22:54.251Z"}}
+[2026-04-03T04:23:01.405Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:23:01.396Z"}}
+[2026-04-03T04:23:01.405Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:23:01.405Z"}}
+[2026-04-03T04:23:04.249Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:23:04.251Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:04.251Z","from":"Service A"}}
+[2026-04-03T04:23:04.255Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:23:04.256Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:04.256Z","from":"Service A"}}
+[2026-04-03T04:23:04.269Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:23:04.263Z"}}
+[2026-04-03T04:23:04.270Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:23:04.263Z"}}
+[2026-04-03T04:23:11.406Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:23:11.397Z"}}
+[2026-04-03T04:23:11.407Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:23:11.407Z"}}
+[2026-04-03T04:23:14.255Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:23:14.260Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:14.260Z","from":"Service A"}}
+[2026-04-03T04:23:14.263Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:23:14.264Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:14.264Z","from":"Service A"}}
+[2026-04-03T04:23:14.274Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:23:14.268Z"}}
+[2026-04-03T04:23:14.275Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:23:14.269Z"}}
+[2026-04-03T04:23:21.412Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:23:21.403Z"}}
+[2026-04-03T04:23:21.413Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:23:21.413Z"}}
+[2026-04-03T04:23:24.260Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:23:24.262Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:24.262Z","from":"Service A"}}
+[2026-04-03T04:23:24.266Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:23:24.267Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:24.267Z","from":"Service A"}}
+[2026-04-03T04:23:24.278Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:23:24.272Z"}}
+[2026-04-03T04:23:24.279Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:23:24.272Z"}}
+[2026-04-03T04:23:31.405Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:23:31.401Z"}}
+[2026-04-03T04:23:31.406Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:23:31.406Z"}}
+[2026-04-03T04:23:34.271Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:23:34.273Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:34.273Z","from":"Service A"}}
+[2026-04-03T04:23:34.276Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:23:34.277Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:34.277Z","from":"Service A"}}
+[2026-04-03T04:23:34.288Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:23:34.282Z"}}
+[2026-04-03T04:23:34.289Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:23:34.282Z"}}
+[2026-04-03T04:23:41.421Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:23:41.415Z"}}
+[2026-04-03T04:23:41.422Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:23:41.422Z"}}
+[2026-04-03T04:23:44.283Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:23:44.285Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:44.285Z","from":"Service A"}}
+[2026-04-03T04:23:44.288Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:23:44.289Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:44.289Z","from":"Service A"}}
+[2026-04-03T04:23:44.300Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:23:44.293Z"}}
+[2026-04-03T04:23:44.300Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:23:44.294Z"}}
+[2026-04-03T04:23:51.426Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:23:51.422Z"}}
+[2026-04-03T04:23:51.427Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:23:51.427Z"}}
+[2026-04-03T04:23:54.298Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:23:54.300Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:54.300Z","from":"Service A"}}
+[2026-04-03T04:23:54.304Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:23:54.305Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:23:54.305Z","from":"Service A"}}
+[2026-04-03T04:23:54.316Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:23:54.310Z"}}
+[2026-04-03T04:23:54.317Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:23:54.310Z"}}
+[2026-04-03T04:24:01.445Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:24:01.435Z"}}
+[2026-04-03T04:24:01.446Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:24:01.446Z"}}
+[2026-04-03T04:24:04.309Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:24:04.311Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:04.311Z","from":"Service A"}}
+[2026-04-03T04:24:04.315Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:24:04.316Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:04.316Z","from":"Service A"}}
+[2026-04-03T04:24:04.328Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:24:04.322Z"}}
+[2026-04-03T04:24:04.329Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:24:04.322Z"}}
+[2026-04-03T04:24:11.456Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:24:11.447Z"}}
+[2026-04-03T04:24:11.457Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:24:11.457Z"}}
+[2026-04-03T04:24:14.316Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:24:14.319Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:14.319Z","from":"Service A"}}
+[2026-04-03T04:24:14.322Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:24:14.323Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:14.323Z","from":"Service A"}}
+[2026-04-03T04:24:14.335Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:24:14.329Z"}}
+[2026-04-03T04:24:14.336Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:24:14.328Z"}}
+[2026-04-03T04:24:21.454Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:24:21.447Z"}}
+[2026-04-03T04:24:21.455Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:24:21.455Z"}}
+[2026-04-03T04:24:24.323Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:24:24.324Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:24.324Z","from":"Service A"}}
+[2026-04-03T04:24:24.325Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:24:24.326Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:24.326Z","from":"Service A"}}
+[2026-04-03T04:24:24.335Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:24:24.330Z"}}
+[2026-04-03T04:24:24.336Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:24:24.330Z"}}
+[2026-04-03T04:24:31.466Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:24:31.460Z"}}
+[2026-04-03T04:24:31.467Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:24:31.467Z"}}
+[2026-04-03T04:24:34.332Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:24:34.334Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:34.334Z","from":"Service A"}}
+[2026-04-03T04:24:34.337Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:24:34.339Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:34.339Z","from":"Service A"}}
+[2026-04-03T04:24:34.349Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:24:34.343Z"}}
+[2026-04-03T04:24:34.350Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:24:34.343Z"}}
+[2026-04-03T04:24:41.465Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:24:41.462Z"}}
+[2026-04-03T04:24:41.466Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:24:41.466Z"}}
+[2026-04-03T04:24:44.341Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:24:44.343Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:44.343Z","from":"Service A"}}
+[2026-04-03T04:24:44.347Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:24:44.348Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:44.348Z","from":"Service A"}}
+[2026-04-03T04:24:44.360Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:24:44.353Z"}}
+[2026-04-03T04:24:44.361Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:24:44.353Z"}}
+[2026-04-03T04:24:51.487Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:24:51.479Z"}}
+[2026-04-03T04:24:51.488Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:24:51.488Z"}}
+[2026-04-03T04:24:54.341Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:24:54.343Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:54.343Z","from":"Service A"}}
+[2026-04-03T04:24:54.346Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:24:54.348Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:24:54.348Z","from":"Service A"}}
+[2026-04-03T04:24:54.359Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:24:54.352Z"}}
+[2026-04-03T04:24:54.360Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:24:54.353Z"}}
+[2026-04-03T04:25:01.498Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:25:01.491Z"}}
+[2026-04-03T04:25:01.499Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:25:01.499Z"}}
+[2026-04-03T04:25:04.348Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:25:04.350Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:04.350Z","from":"Service A"}}
+[2026-04-03T04:25:04.355Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:25:04.356Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:04.356Z","from":"Service A"}}
+[2026-04-03T04:25:04.367Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:25:04.360Z"}}
+[2026-04-03T04:25:04.368Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:25:04.360Z"}}
+[2026-04-03T04:25:11.508Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:25:11.501Z"}}
+[2026-04-03T04:25:11.509Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:25:11.509Z"}}
+[2026-04-03T04:25:14.356Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:25:14.359Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:14.359Z","from":"Service A"}}
+[2026-04-03T04:25:14.363Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:25:14.364Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:14.364Z","from":"Service A"}}
+[2026-04-03T04:25:14.375Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:25:14.368Z"}}
+[2026-04-03T04:25:14.376Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:25:14.368Z"}}
+[2026-04-03T04:25:21.523Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:25:21.516Z"}}
+[2026-04-03T04:25:21.524Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:25:21.524Z"}}
+[2026-04-03T04:25:24.361Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:25:24.364Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:24.364Z","from":"Service A"}}
+[2026-04-03T04:25:24.368Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:25:24.369Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:24.369Z","from":"Service A"}}
+[2026-04-03T04:25:24.380Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:25:24.374Z"}}
+[2026-04-03T04:25:24.381Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:25:24.374Z"}}
+[2026-04-03T04:25:31.527Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:25:31.520Z"}}
+[2026-04-03T04:25:31.528Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:25:31.528Z"}}
+[2026-04-03T04:25:34.375Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:25:34.378Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:34.377Z","from":"Service A"}}
+[2026-04-03T04:25:34.381Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:25:34.382Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:34.382Z","from":"Service A"}}
+[2026-04-03T04:25:34.394Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:25:34.387Z"}}
+[2026-04-03T04:25:34.395Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:25:34.387Z"}}
+[2026-04-03T04:25:41.530Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:25:41.526Z"}}
+[2026-04-03T04:25:41.531Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:25:41.531Z"}}
+[2026-04-03T04:25:44.380Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:25:44.382Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:44.382Z","from":"Service A"}}
+[2026-04-03T04:25:44.386Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:25:44.388Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:44.388Z","from":"Service A"}}
+[2026-04-03T04:25:44.401Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:25:44.394Z"}}
+[2026-04-03T04:25:44.402Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:25:44.394Z"}}
+[2026-04-03T04:25:51.543Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:25:51.535Z"}}
+[2026-04-03T04:25:51.544Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:25:51.544Z"}}
+[2026-04-03T04:25:54.393Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:25:54.397Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:54.397Z","from":"Service A"}}
+[2026-04-03T04:25:54.401Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:25:54.402Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:25:54.402Z","from":"Service A"}}
+[2026-04-03T04:25:54.413Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:25:54.406Z"}}
+[2026-04-03T04:25:54.414Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:25:54.407Z"}}
+[2026-04-03T04:26:01.545Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:26:01.541Z"}}
+[2026-04-03T04:26:01.545Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:26:01.545Z"}}
+[2026-04-03T04:26:04.405Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:26:04.407Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:04.407Z","from":"Service A"}}
+[2026-04-03T04:26:04.411Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:26:04.413Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:04.413Z","from":"Service A"}}
+[2026-04-03T04:26:04.425Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:26:04.420Z"}}
+[2026-04-03T04:26:04.426Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:26:04.418Z"}}
+[2026-04-03T04:26:11.551Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:26:11.545Z"}}
+[2026-04-03T04:26:11.552Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:26:11.552Z"}}
+[2026-04-03T04:26:14.410Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:26:14.412Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:14.412Z","from":"Service A"}}
+[2026-04-03T04:26:14.416Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:26:14.417Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:14.417Z","from":"Service A"}}
+[2026-04-03T04:26:14.428Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:26:14.421Z"}}
+[2026-04-03T04:26:14.429Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:26:14.422Z"}}
+[2026-04-03T04:26:21.560Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:26:21.556Z"}}
+[2026-04-03T04:26:21.561Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:26:21.561Z"}}
+[2026-04-03T04:26:24.414Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:26:24.415Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:24.415Z","from":"Service A"}}
+[2026-04-03T04:26:24.418Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:26:24.419Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:24.419Z","from":"Service A"}}
+[2026-04-03T04:26:24.430Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:26:24.424Z"}}
+[2026-04-03T04:26:24.431Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:26:24.424Z"}}
+[2026-04-03T04:26:31.571Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:26:31.567Z"}}
+[2026-04-03T04:26:31.572Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:26:31.572Z"}}
+[2026-04-03T04:26:34.418Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:26:34.420Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:34.420Z","from":"Service A"}}
+[2026-04-03T04:26:34.424Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:26:34.425Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:34.425Z","from":"Service A"}}
+[2026-04-03T04:26:34.437Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:26:34.432Z"}}
+[2026-04-03T04:26:34.438Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:26:34.431Z"}}
+[2026-04-03T04:26:41.585Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:26:41.581Z"}}
+[2026-04-03T04:26:41.586Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:26:41.586Z"}}
+[2026-04-03T04:26:44.431Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:26:44.434Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:44.434Z","from":"Service A"}}
+[2026-04-03T04:26:44.438Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:26:44.439Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:44.439Z","from":"Service A"}}
+[2026-04-03T04:26:44.452Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:26:44.445Z"}}
+[2026-04-03T04:26:44.453Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:26:44.445Z"}}
+[2026-04-03T04:26:51.597Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:26:51.593Z"}}
+[2026-04-03T04:26:51.597Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:26:51.597Z"}}
+[2026-04-03T04:26:54.440Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:26:54.443Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:54.443Z","from":"Service A"}}
+[2026-04-03T04:26:54.446Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:26:54.447Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:26:54.447Z","from":"Service A"}}
+[2026-04-03T04:26:54.458Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:26:54.453Z"}}
+[2026-04-03T04:26:54.459Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:26:54.452Z"}}
+[2026-04-03T04:27:01.612Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:27:01.603Z"}}
+[2026-04-03T04:27:01.613Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:27:01.613Z"}}
+[2026-04-03T04:27:04.444Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:27:04.448Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:04.448Z","from":"Service A"}}
+[2026-04-03T04:27:04.452Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:27:04.453Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:04.453Z","from":"Service A"}}
+[2026-04-03T04:27:04.465Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:27:04.459Z"}}
+[2026-04-03T04:27:04.466Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:27:04.459Z"}}
+[2026-04-03T04:27:11.616Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:27:11.610Z"}}
+[2026-04-03T04:27:11.617Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:27:11.617Z"}}
+[2026-04-03T04:27:14.448Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:27:14.450Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:14.450Z","from":"Service A"}}
+[2026-04-03T04:27:14.453Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:27:14.454Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:14.454Z","from":"Service A"}}
+[2026-04-03T04:27:14.466Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:27:14.460Z"}}
+[2026-04-03T04:27:14.467Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:27:14.461Z"}}
+[2026-04-03T04:27:21.624Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:27:21.618Z"}}
+[2026-04-03T04:27:21.625Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:27:21.625Z"}}
+[2026-04-03T04:27:24.459Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:27:24.461Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:24.461Z","from":"Service A"}}
+[2026-04-03T04:27:24.466Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:27:24.468Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:24.468Z","from":"Service A"}}
+[2026-04-03T04:27:24.479Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:27:24.473Z"}}
+[2026-04-03T04:27:24.480Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:27:24.473Z"}}
+[2026-04-03T04:27:31.638Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:27:31.631Z"}}
+[2026-04-03T04:27:31.638Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:27:31.638Z"}}
+[2026-04-03T04:27:34.468Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:27:34.471Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:34.471Z","from":"Service A"}}
+[2026-04-03T04:27:34.475Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:27:34.477Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:34.477Z","from":"Service A"}}
+[2026-04-03T04:27:34.488Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:27:34.482Z"}}
+[2026-04-03T04:27:34.488Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:27:34.482Z"}}
+[2026-04-03T04:27:41.641Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:27:41.637Z"}}
+[2026-04-03T04:27:41.641Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:27:41.641Z"}}
+[2026-04-03T04:27:44.473Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:27:44.475Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:44.475Z","from":"Service A"}}
+[2026-04-03T04:27:44.479Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:27:44.480Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:44.480Z","from":"Service A"}}
+[2026-04-03T04:27:44.491Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:27:44.485Z"}}
+[2026-04-03T04:27:44.492Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:27:44.485Z"}}
+[2026-04-03T04:27:51.658Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:27:51.653Z"}}
+[2026-04-03T04:27:51.659Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:27:51.659Z"}}
+[2026-04-03T04:27:54.483Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:27:54.485Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:54.485Z","from":"Service A"}}
+[2026-04-03T04:27:54.488Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:27:54.490Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:27:54.490Z","from":"Service A"}}
+[2026-04-03T04:27:54.502Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:27:54.496Z"}}
+[2026-04-03T04:27:54.503Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:27:54.496Z"}}
+[2026-04-03T04:28:01.666Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:28:01.660Z"}}
+[2026-04-03T04:28:01.666Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:28:01.666Z"}}
+[2026-04-03T04:28:04.484Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:28:04.487Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:04.487Z","from":"Service A"}}
+[2026-04-03T04:28:04.491Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:28:04.492Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:04.492Z","from":"Service A"}}
+[2026-04-03T04:28:04.503Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:28:04.497Z"}}
+[2026-04-03T04:28:04.504Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:28:04.497Z"}}
+[2026-04-03T04:28:11.672Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:28:11.663Z"}}
+[2026-04-03T04:28:11.673Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:28:11.673Z"}}
+[2026-04-03T04:28:14.485Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:28:14.487Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:14.487Z","from":"Service A"}}
+[2026-04-03T04:28:14.491Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:28:14.493Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:14.493Z","from":"Service A"}}
+[2026-04-03T04:28:14.503Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:28:14.497Z"}}
+[2026-04-03T04:28:14.504Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:28:14.497Z"}}
+[2026-04-03T04:28:21.677Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:28:21.669Z"}}
+[2026-04-03T04:28:21.678Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:28:21.678Z"}}
+[2026-04-03T04:28:24.488Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:28:24.491Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:24.491Z","from":"Service A"}}
+[2026-04-03T04:28:24.495Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:28:24.496Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:24.496Z","from":"Service A"}}
+[2026-04-03T04:28:24.508Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:28:24.502Z"}}
+[2026-04-03T04:28:24.509Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:28:24.502Z"}}
+[2026-04-03T04:28:31.681Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:28:31.674Z"}}
+[2026-04-03T04:28:31.682Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:28:31.682Z"}}
+[2026-04-03T04:28:34.501Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:28:34.504Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:34.504Z","from":"Service A"}}
+[2026-04-03T04:28:34.508Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:28:34.509Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:34.509Z","from":"Service A"}}
+[2026-04-03T04:28:34.521Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:28:34.514Z"}}
+[2026-04-03T04:28:34.522Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:28:34.514Z"}}
+[2026-04-03T04:28:41.686Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:28:41.682Z"}}
+[2026-04-03T04:28:41.686Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:28:41.686Z"}}
+[2026-04-03T04:28:44.504Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:28:44.507Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:44.507Z","from":"Service A"}}
+[2026-04-03T04:28:44.512Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:28:44.513Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:44.513Z","from":"Service A"}}
+[2026-04-03T04:28:44.526Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:28:44.519Z"}}
+[2026-04-03T04:28:44.527Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:28:44.519Z"}}
+[2026-04-03T04:28:51.704Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:28:51.696Z"}}
+[2026-04-03T04:28:51.705Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:28:51.705Z"}}
+[2026-04-03T04:28:54.518Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:28:54.522Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:54.522Z","from":"Service A"}}
+[2026-04-03T04:28:54.527Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:28:54.528Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:28:54.528Z","from":"Service A"}}
+[2026-04-03T04:28:54.539Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:28:54.534Z"}}
+[2026-04-03T04:28:54.540Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:28:54.533Z"}}
+[2026-04-03T04:29:01.706Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:29:01.700Z"}}
+[2026-04-03T04:29:01.707Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:29:01.707Z"}}
+[2026-04-03T04:29:04.525Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:29:04.528Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:04.528Z","from":"Service A"}}
+[2026-04-03T04:29:04.532Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:29:04.533Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:04.533Z","from":"Service A"}}
+[2026-04-03T04:29:04.544Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:29:04.538Z"}}
+[2026-04-03T04:29:04.545Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:29:04.538Z"}}
+[2026-04-03T04:29:11.713Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:29:11.706Z"}}
+[2026-04-03T04:29:11.714Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:29:11.714Z"}}
+[2026-04-03T04:29:14.529Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:29:14.531Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:14.531Z","from":"Service A"}}
+[2026-04-03T04:29:14.534Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:29:14.536Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:14.536Z","from":"Service A"}}
+[2026-04-03T04:29:14.546Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:29:14.540Z"}}
+[2026-04-03T04:29:14.547Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:29:14.539Z"}}
+[2026-04-03T04:29:21.718Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:29:21.711Z"}}
+[2026-04-03T04:29:21.720Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:29:21.720Z"}}
+[2026-04-03T04:29:24.541Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:29:24.544Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:24.544Z","from":"Service A"}}
+[2026-04-03T04:29:24.547Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:29:24.549Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:24.549Z","from":"Service A"}}
+[2026-04-03T04:29:24.560Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:29:24.555Z"}}
+[2026-04-03T04:29:24.561Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:29:24.555Z"}}
+[2026-04-03T04:29:31.718Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:29:31.715Z"}}
+[2026-04-03T04:29:31.719Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:29:31.719Z"}}
+[2026-04-03T04:29:34.551Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:29:34.553Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:34.553Z","from":"Service A"}}
+[2026-04-03T04:29:34.557Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:29:34.558Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:34.558Z","from":"Service A"}}
+[2026-04-03T04:29:34.569Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:29:34.564Z"}}
+[2026-04-03T04:29:34.570Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:29:34.563Z"}}
+[2026-04-03T04:29:41.739Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:29:41.732Z"}}
+[2026-04-03T04:29:41.740Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:29:41.740Z"}}
+[2026-04-03T04:29:44.566Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:29:44.568Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:44.568Z","from":"Service A"}}
+[2026-04-03T04:29:44.572Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:29:44.574Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:44.574Z","from":"Service A"}}
+[2026-04-03T04:29:44.587Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:29:44.581Z"}}
+[2026-04-03T04:29:44.588Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:29:44.581Z"}}
+[2026-04-03T04:29:51.752Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:29:51.745Z"}}
+[2026-04-03T04:29:51.753Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:29:51.753Z"}}
+[2026-04-03T04:29:54.568Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:29:54.570Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:54.570Z","from":"Service A"}}
+[2026-04-03T04:29:54.573Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:29:54.574Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:29:54.574Z","from":"Service A"}}
+[2026-04-03T04:29:54.584Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:29:54.579Z"}}
+[2026-04-03T04:29:54.585Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:29:54.580Z"}}
+[2026-04-03T04:30:01.764Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:30:01.757Z"}}
+[2026-04-03T04:30:01.765Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:30:01.765Z"}}
+[2026-04-03T04:30:04.571Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:30:04.574Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:04.574Z","from":"Service A"}}
+[2026-04-03T04:30:04.578Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:30:04.579Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:04.579Z","from":"Service A"}}
+[2026-04-03T04:30:04.590Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:30:04.584Z"}}
+[2026-04-03T04:30:04.591Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:30:04.583Z"}}
+[2026-04-03T04:30:11.770Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:30:11.762Z"}}
+[2026-04-03T04:30:11.771Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:30:11.770Z"}}
+[2026-04-03T04:30:14.584Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:30:14.587Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:14.587Z","from":"Service A"}}
+[2026-04-03T04:30:14.591Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:30:14.593Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:14.593Z","from":"Service A"}}
+[2026-04-03T04:30:14.604Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:30:14.599Z"}}
+[2026-04-03T04:30:14.605Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:30:14.598Z"}}
+[2026-04-03T04:30:21.772Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:30:21.766Z"}}
+[2026-04-03T04:30:21.774Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:30:21.774Z"}}
+[2026-04-03T04:30:24.590Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:30:24.592Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:24.592Z","from":"Service A"}}
+[2026-04-03T04:30:24.596Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:30:24.597Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:24.597Z","from":"Service A"}}
+[2026-04-03T04:30:24.608Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:30:24.603Z"}}
+[2026-04-03T04:30:24.609Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:30:24.602Z"}}
+[2026-04-03T04:30:31.787Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:30:31.783Z"}}
+[2026-04-03T04:30:31.788Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:30:31.788Z"}}
+[2026-04-03T04:30:34.594Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:30:34.597Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:34.597Z","from":"Service A"}}
+[2026-04-03T04:30:34.601Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:30:34.602Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:34.602Z","from":"Service A"}}
+[2026-04-03T04:30:34.614Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:30:34.608Z"}}
+[2026-04-03T04:30:34.615Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:30:34.608Z"}}
+[2026-04-03T04:30:41.796Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:30:41.789Z"}}
+[2026-04-03T04:30:41.797Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:30:41.797Z"}}
+[2026-04-03T04:30:44.607Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:30:44.608Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:44.608Z","from":"Service A"}}
+[2026-04-03T04:30:44.609Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:30:44.610Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:44.610Z","from":"Service A"}}
+[2026-04-03T04:30:44.618Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:30:44.614Z"}}
+[2026-04-03T04:30:44.619Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:30:44.614Z"}}
+[2026-04-03T04:30:51.801Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:30:51.795Z"}}
+[2026-04-03T04:30:51.803Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:30:51.803Z"}}
+[2026-04-03T04:30:54.619Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:30:54.620Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:54.620Z","from":"Service A"}}
+[2026-04-03T04:30:54.621Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:30:54.622Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:30:54.622Z","from":"Service A"}}
+[2026-04-03T04:30:54.631Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:30:54.627Z"}}
+[2026-04-03T04:30:54.632Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:30:54.626Z"}}
+[2026-04-03T04:31:01.810Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:31:01.806Z"}}
+[2026-04-03T04:31:01.811Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:31:01.811Z"}}
+[2026-04-03T04:31:04.620Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:31:04.622Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:04.622Z","from":"Service A"}}
+[2026-04-03T04:31:04.627Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:31:04.628Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:04.628Z","from":"Service A"}}
+[2026-04-03T04:31:04.639Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:31:04.633Z"}}
+[2026-04-03T04:31:04.640Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:31:04.633Z"}}
+[2026-04-03T04:31:11.828Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:31:11.821Z"}}
+[2026-04-03T04:31:11.829Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:31:11.829Z"}}
+[2026-04-03T04:31:14.630Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:31:14.632Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:14.632Z","from":"Service A"}}
+[2026-04-03T04:31:14.635Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:31:14.636Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:14.636Z","from":"Service A"}}
+[2026-04-03T04:31:14.649Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:31:14.642Z"}}
+[2026-04-03T04:31:14.650Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:31:14.642Z"}}
+[2026-04-03T04:31:21.839Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:31:21.833Z"}}
+[2026-04-03T04:31:21.840Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:31:21.840Z"}}
+[2026-04-03T04:31:24.643Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:31:24.645Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:24.645Z","from":"Service A"}}
+[2026-04-03T04:31:24.649Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:31:24.650Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:24.650Z","from":"Service A"}}
+[2026-04-03T04:31:24.662Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:31:24.656Z"}}
+[2026-04-03T04:31:24.663Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:31:24.656Z"}}
+[2026-04-03T04:31:31.847Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:31:31.840Z"}}
+[2026-04-03T04:31:31.849Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:31:31.849Z"}}
+[2026-04-03T04:31:34.643Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:31:34.646Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:34.645Z","from":"Service A"}}
+[2026-04-03T04:31:34.647Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:31:34.649Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:34.649Z","from":"Service A"}}
+[2026-04-03T04:31:34.659Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:31:34.653Z"}}
+[2026-04-03T04:31:34.660Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:31:34.654Z"}}
+[2026-04-03T04:31:41.849Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:31:41.845Z"}}
+[2026-04-03T04:31:41.850Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:31:41.850Z"}}
+[2026-04-03T04:31:44.643Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:31:44.644Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:44.644Z","from":"Service A"}}
+[2026-04-03T04:31:44.645Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:31:44.646Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:44.646Z","from":"Service A"}}
+[2026-04-03T04:31:44.655Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:31:44.650Z"}}
+[2026-04-03T04:31:44.656Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:31:44.649Z"}}
+[2026-04-03T04:31:51.859Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:31:51.855Z"}}
+[2026-04-03T04:31:51.860Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:31:51.860Z"}}
+[2026-04-03T04:31:54.644Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:31:54.646Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:54.646Z","from":"Service A"}}
+[2026-04-03T04:31:54.648Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:31:54.649Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:31:54.649Z","from":"Service A"}}
+[2026-04-03T04:31:54.658Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:31:54.652Z"}}
+[2026-04-03T04:31:54.659Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:31:54.653Z"}}
+[2026-04-03T04:32:01.860Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:32:01.857Z"}}
+[2026-04-03T04:32:01.861Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:32:01.861Z"}}
+[2026-04-03T04:32:04.648Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:32:04.651Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:04.651Z","from":"Service A"}}
+[2026-04-03T04:32:04.655Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:32:04.656Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:04.656Z","from":"Service A"}}
+[2026-04-03T04:32:04.668Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:32:04.662Z"}}
+[2026-04-03T04:32:04.669Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:32:04.661Z"}}
+[2026-04-03T04:32:11.877Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:32:11.871Z"}}
+[2026-04-03T04:32:11.878Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:32:11.878Z"}}
+[2026-04-03T04:32:14.657Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:32:14.660Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:14.660Z","from":"Service A"}}
+[2026-04-03T04:32:14.662Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:32:14.663Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:14.663Z","from":"Service A"}}
+[2026-04-03T04:32:14.674Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:32:14.668Z"}}
+[2026-04-03T04:32:14.675Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:32:14.668Z"}}
+[2026-04-03T04:32:21.889Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:32:21.885Z"}}
+[2026-04-03T04:32:21.890Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:32:21.890Z"}}
+[2026-04-03T04:32:24.663Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:32:24.663Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:24.663Z","from":"Service A"}}
+[2026-04-03T04:32:24.664Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:32:24.665Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:24.665Z","from":"Service A"}}
+[2026-04-03T04:32:24.676Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:32:24.669Z"}}
+[2026-04-03T04:32:24.677Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:32:24.670Z"}}
+[2026-04-03T04:32:31.904Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:32:31.899Z"}}
+[2026-04-03T04:32:31.906Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:32:31.906Z"}}
+[2026-04-03T04:32:34.665Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:32:34.667Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:34.667Z","from":"Service A"}}
+[2026-04-03T04:32:34.670Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:32:34.670Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:34.670Z","from":"Service A"}}
+[2026-04-03T04:32:34.681Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:32:34.674Z"}}
+[2026-04-03T04:32:34.682Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:32:34.675Z"}}
+[2026-04-03T04:32:41.916Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:32:41.910Z"}}
+[2026-04-03T04:32:41.917Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:32:41.917Z"}}
+[2026-04-03T04:32:44.676Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:32:44.678Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:44.678Z","from":"Service A"}}
+[2026-04-03T04:32:44.680Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:32:44.682Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:44.682Z","from":"Service A"}}
+[2026-04-03T04:32:44.695Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:32:44.689Z"}}
+[2026-04-03T04:32:44.696Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:32:44.688Z"}}
+[2026-04-03T04:32:51.912Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:32:51.910Z"}}
+[2026-04-03T04:32:51.913Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:32:51.913Z"}}
+[2026-04-03T04:32:54.692Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:32:54.693Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:54.693Z","from":"Service A"}}
+[2026-04-03T04:32:54.694Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:32:54.695Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:32:54.695Z","from":"Service A"}}
+[2026-04-03T04:32:54.705Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:32:54.700Z"}}
+[2026-04-03T04:32:54.706Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:32:54.699Z"}}
+[2026-04-03T04:33:01.918Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:33:01.914Z"}}
+[2026-04-03T04:33:01.919Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:33:01.919Z"}}
+[2026-04-03T04:33:04.692Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:33:04.693Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:04.693Z","from":"Service A"}}
+[2026-04-03T04:33:04.695Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:33:04.696Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:04.696Z","from":"Service A"}}
+[2026-04-03T04:33:04.705Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:33:04.700Z"}}
+[2026-04-03T04:33:04.706Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:33:04.699Z"}}
+[2026-04-03T04:33:11.928Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:33:11.925Z"}}
+[2026-04-03T04:33:11.928Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:33:11.928Z"}}
+[2026-04-03T04:33:14.699Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:33:14.700Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:14.700Z","from":"Service A"}}
+[2026-04-03T04:33:14.702Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:33:14.702Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:14.702Z","from":"Service A"}}
+[2026-04-03T04:33:14.712Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:33:14.705Z"}}
+[2026-04-03T04:33:14.713Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:33:14.706Z"}}
+[2026-04-03T04:33:21.936Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:33:21.933Z"}}
+[2026-04-03T04:33:21.936Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:33:21.936Z"}}
+[2026-04-03T04:33:24.714Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:33:24.715Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:24.715Z","from":"Service A"}}
+[2026-04-03T04:33:24.718Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:33:24.718Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:24.718Z","from":"Service A"}}
+[2026-04-03T04:33:24.729Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:33:24.722Z"}}
+[2026-04-03T04:33:24.730Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:33:24.722Z"}}
+[2026-04-03T04:33:31.943Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:33:31.940Z"}}
+[2026-04-03T04:33:31.944Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:33:31.944Z"}}
+[2026-04-03T04:33:34.717Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:33:34.718Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:34.718Z","from":"Service A"}}
+[2026-04-03T04:33:34.719Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:33:34.719Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:34.719Z","from":"Service A"}}
+[2026-04-03T04:33:34.729Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:33:34.723Z"}}
+[2026-04-03T04:33:34.729Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:33:34.722Z"}}
+[2026-04-03T04:33:41.953Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:33:41.949Z"}}
+[2026-04-03T04:33:41.954Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:33:41.954Z"}}
+[2026-04-03T04:33:44.723Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:33:44.724Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:44.724Z","from":"Service A"}}
+[2026-04-03T04:33:44.725Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:33:44.726Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:44.726Z","from":"Service A"}}
+[2026-04-03T04:33:44.736Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:33:44.730Z"}}
+[2026-04-03T04:33:44.737Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:33:44.730Z"}}
+[2026-04-03T04:33:51.966Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T04:33:51.963Z"}}
+[2026-04-03T04:33:51.967Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T04:33:51.967Z"}}
+[2026-04-03T04:33:54.724Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T04:33:54.725Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:54.725Z","from":"Service A"}}
+[2026-04-03T04:33:54.726Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T04:33:54.726Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:54.726Z","from":"Service A"}}
+[2026-04-03T04:33:54.736Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:33:54.730Z"}}
+[2026-04-03T04:33:54.737Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:33:54.730Z"}}
