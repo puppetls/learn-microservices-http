@@ -710,3 +710,764 @@
 [2026-04-03T04:33:54.726Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T04:33:54.726Z","from":"Service A"}}
 [2026-04-03T04:33:54.736Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T04:33:54.730Z"}}
 [2026-04-03T04:33:54.737Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T04:33:54.730Z"}}
+[2026-04-03T08:53:16.758Z] [Service-A] [INFO] [MAIN] Service A started - pinging Service B and Service C every 10 seconds
+[2026-04-03T08:53:16.762Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:53:16.764Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:53:16.763Z","from":"Service A"}}
+[2026-04-03T08:53:16.797Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:53:16.798Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:53:16.798Z","from":"Service A"}}
+[2026-04-03T08:53:16.806Z] [Service-A] [INFO] [SERVICE] Service-A started | {"port":3030}
+[2026-04-03T08:53:16.815Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:53:16.818Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:54:50.117Z] [Service-A] [INFO] [MAIN] Service A started - pinging Service B and Service C every 10 seconds
+[2026-04-03T08:54:50.119Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:54:50.120Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:54:50.120Z","from":"Service A"}}
+[2026-04-03T08:54:50.147Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:54:50.148Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:54:50.148Z","from":"Service A"}}
+[2026-04-03T08:54:50.150Z] [Service-A] [INFO] [SERVICE] Service-A started | {"port":3030}
+[2026-04-03T08:54:50.160Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:54:50.161Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:55:00.125Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:55:00.126Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:00.126Z","from":"Service A"}}
+[2026-04-03T08:55:00.131Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:55:00.132Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:00.132Z","from":"Service A"}}
+[2026-04-03T08:55:00.136Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:55:00.138Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:55:10.155Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:55:10.156Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:10.156Z","from":"Service A"}}
+[2026-04-03T08:55:10.161Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:55:10.162Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:10.161Z","from":"Service A"}}
+[2026-04-03T08:55:10.170Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:55:10.176Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:55:20.166Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:55:20.167Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:20.167Z","from":"Service A"}}
+[2026-04-03T08:55:20.169Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:55:20.170Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:20.170Z","from":"Service A"}}
+[2026-04-03T08:55:20.173Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:55:20.174Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:55:30.175Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:55:30.176Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:30.176Z","from":"Service A"}}
+[2026-04-03T08:55:30.179Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:55:30.180Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:30.180Z","from":"Service A"}}
+[2026-04-03T08:55:30.183Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:55:30.184Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:55:40.186Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:55:40.187Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:40.187Z","from":"Service A"}}
+[2026-04-03T08:55:40.189Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:55:40.190Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:40.190Z","from":"Service A"}}
+[2026-04-03T08:55:40.194Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:55:40.195Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:55:50.195Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:55:50.195Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:50.195Z","from":"Service A"}}
+[2026-04-03T08:55:50.197Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:55:50.198Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:55:50.198Z","from":"Service A"}}
+[2026-04-03T08:55:50.201Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:55:50.203Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:56:00.208Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:56:00.210Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:00.210Z","from":"Service A"}}
+[2026-04-03T08:56:00.212Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:56:00.213Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:00.213Z","from":"Service A"}}
+[2026-04-03T08:56:00.215Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:56:00.216Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:56:10.224Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:56:10.227Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:10.226Z","from":"Service A"}}
+[2026-04-03T08:56:10.239Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:56:10.240Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:10.240Z","from":"Service A"}}
+[2026-04-03T08:56:10.244Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:56:10.246Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:56:20.230Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:56:20.231Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:20.231Z","from":"Service A"}}
+[2026-04-03T08:56:20.233Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:56:20.234Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:20.234Z","from":"Service A"}}
+[2026-04-03T08:56:20.237Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:56:20.238Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:56:30.250Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:56:30.251Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:30.251Z","from":"Service A"}}
+[2026-04-03T08:56:30.264Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:56:30.266Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:30.266Z","from":"Service A"}}
+[2026-04-03T08:56:30.270Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:56:30.272Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:56:40.251Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:56:40.252Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:40.252Z","from":"Service A"}}
+[2026-04-03T08:56:40.254Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:56:40.255Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:40.255Z","from":"Service A"}}
+[2026-04-03T08:56:40.257Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:56:40.258Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:56:50.258Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:56:50.261Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:50.261Z","from":"Service A"}}
+[2026-04-03T08:56:50.263Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:56:50.264Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:56:50.264Z","from":"Service A"}}
+[2026-04-03T08:56:50.267Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:56:50.268Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:57:00.272Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:57:00.273Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:00.273Z","from":"Service A"}}
+[2026-04-03T08:57:00.275Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:57:00.275Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:00.275Z","from":"Service A"}}
+[2026-04-03T08:57:00.278Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:57:00.279Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:57:10.293Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:57:10.293Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:10.293Z","from":"Service A"}}
+[2026-04-03T08:57:10.299Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:57:10.300Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:10.300Z","from":"Service A"}}
+[2026-04-03T08:57:10.305Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:57:10.306Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:57:20.305Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:57:20.308Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:20.308Z","from":"Service A"}}
+[2026-04-03T08:57:20.310Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:57:20.311Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:20.311Z","from":"Service A"}}
+[2026-04-03T08:57:20.314Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:57:20.315Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:57:30.321Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:57:30.322Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:30.322Z","from":"Service A"}}
+[2026-04-03T08:57:30.325Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:57:30.325Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:30.325Z","from":"Service A"}}
+[2026-04-03T08:57:30.330Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:57:30.332Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:57:40.322Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:57:40.323Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:40.323Z","from":"Service A"}}
+[2026-04-03T08:57:40.325Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:57:40.325Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:40.325Z","from":"Service A"}}
+[2026-04-03T08:57:40.329Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:57:40.330Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:57:50.325Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:57:50.326Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:50.326Z","from":"Service A"}}
+[2026-04-03T08:57:50.328Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:57:50.329Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:57:50.329Z","from":"Service A"}}
+[2026-04-03T08:57:50.334Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:57:50.336Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:58:00.340Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:58:00.340Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:00.340Z","from":"Service A"}}
+[2026-04-03T08:58:00.342Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:58:00.343Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:00.343Z","from":"Service A"}}
+[2026-04-03T08:58:00.345Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:58:00.346Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:58:10.343Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:58:10.344Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:10.344Z","from":"Service A"}}
+[2026-04-03T08:58:10.347Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:58:10.348Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:10.348Z","from":"Service A"}}
+[2026-04-03T08:58:10.351Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:58:10.352Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:58:20.351Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:58:20.352Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:20.352Z","from":"Service A"}}
+[2026-04-03T08:58:20.354Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:58:20.354Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:20.354Z","from":"Service A"}}
+[2026-04-03T08:58:20.357Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:58:20.358Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:58:30.362Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:58:30.364Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:30.364Z","from":"Service A"}}
+[2026-04-03T08:58:30.365Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:58:30.366Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:30.366Z","from":"Service A"}}
+[2026-04-03T08:58:30.372Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:58:30.374Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:58:40.368Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:58:40.369Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:40.369Z","from":"Service A"}}
+[2026-04-03T08:58:40.371Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:58:40.374Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:40.374Z","from":"Service A"}}
+[2026-04-03T08:58:40.377Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:58:40.379Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:58:50.378Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:58:50.379Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:50.379Z","from":"Service A"}}
+[2026-04-03T08:58:50.380Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:58:50.381Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:58:50.381Z","from":"Service A"}}
+[2026-04-03T08:58:50.386Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:58:50.387Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:59:00.391Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:59:00.392Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:00.392Z","from":"Service A"}}
+[2026-04-03T08:59:00.394Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:59:00.395Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:00.395Z","from":"Service A"}}
+[2026-04-03T08:59:00.398Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:59:00.399Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:59:10.403Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:59:10.404Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:10.404Z","from":"Service A"}}
+[2026-04-03T08:59:10.406Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:59:10.406Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:10.406Z","from":"Service A"}}
+[2026-04-03T08:59:10.410Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:59:10.411Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:59:20.403Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:59:20.404Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:20.404Z","from":"Service A"}}
+[2026-04-03T08:59:20.406Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:59:20.406Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:20.406Z","from":"Service A"}}
+[2026-04-03T08:59:20.409Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:59:20.410Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:59:30.404Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:59:30.406Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:30.406Z","from":"Service A"}}
+[2026-04-03T08:59:30.409Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:59:30.410Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:30.410Z","from":"Service A"}}
+[2026-04-03T08:59:30.413Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:59:30.414Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:59:40.409Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:59:40.410Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:40.410Z","from":"Service A"}}
+[2026-04-03T08:59:40.412Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:59:40.412Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:40.412Z","from":"Service A"}}
+[2026-04-03T08:59:40.415Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:59:40.417Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T08:59:50.425Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T08:59:50.425Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:50.425Z","from":"Service A"}}
+[2026-04-03T08:59:50.428Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T08:59:50.428Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T08:59:50.428Z","from":"Service A"}}
+[2026-04-03T08:59:50.432Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T08:59:50.433Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:00:00.435Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:00:00.436Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:00.435Z","from":"Service A"}}
+[2026-04-03T09:00:00.439Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:00:00.440Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:00.440Z","from":"Service A"}}
+[2026-04-03T09:00:00.443Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:00:00.445Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:00:10.452Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:00:10.453Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:10.453Z","from":"Service A"}}
+[2026-04-03T09:00:10.455Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:00:10.456Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:10.456Z","from":"Service A"}}
+[2026-04-03T09:00:10.461Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:00:10.467Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:00:20.457Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:00:20.458Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:20.458Z","from":"Service A"}}
+[2026-04-03T09:00:20.460Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:00:20.461Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:20.461Z","from":"Service A"}}
+[2026-04-03T09:00:20.466Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:00:20.467Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:00:30.469Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:00:30.470Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:30.470Z","from":"Service A"}}
+[2026-04-03T09:00:30.472Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:00:30.472Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:30.472Z","from":"Service A"}}
+[2026-04-03T09:00:30.475Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:00:30.476Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:00:40.475Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:00:40.476Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:40.476Z","from":"Service A"}}
+[2026-04-03T09:00:40.479Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:00:40.480Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:40.480Z","from":"Service A"}}
+[2026-04-03T09:00:40.482Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:00:40.483Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:00:50.486Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:00:50.490Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:50.490Z","from":"Service A"}}
+[2026-04-03T09:00:50.492Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:00:50.493Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:00:50.493Z","from":"Service A"}}
+[2026-04-03T09:00:50.499Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:00:50.501Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:01:00.496Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:01:00.497Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:00.497Z","from":"Service A"}}
+[2026-04-03T09:01:00.499Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:01:00.500Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:00.500Z","from":"Service A"}}
+[2026-04-03T09:01:00.503Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:01:00.504Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:01:10.506Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:01:10.507Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:10.507Z","from":"Service A"}}
+[2026-04-03T09:01:10.510Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:01:10.510Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:10.510Z","from":"Service A"}}
+[2026-04-03T09:01:10.513Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:01:10.514Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:01:20.516Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:01:20.518Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:20.518Z","from":"Service A"}}
+[2026-04-03T09:01:20.520Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:01:20.520Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:20.520Z","from":"Service A"}}
+[2026-04-03T09:01:20.523Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:01:20.524Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:01:30.526Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:01:30.528Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:30.528Z","from":"Service A"}}
+[2026-04-03T09:01:30.531Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:01:30.531Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:30.531Z","from":"Service A"}}
+[2026-04-03T09:01:30.534Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:01:30.535Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:01:40.539Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:01:40.540Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:40.540Z","from":"Service A"}}
+[2026-04-03T09:01:40.545Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:01:40.546Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:40.546Z","from":"Service A"}}
+[2026-04-03T09:01:40.549Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:01:40.551Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:01:50.551Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:01:50.552Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:50.552Z","from":"Service A"}}
+[2026-04-03T09:01:50.555Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:01:50.556Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:01:50.556Z","from":"Service A"}}
+[2026-04-03T09:01:50.560Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:01:50.561Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:02:00.562Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:02:00.563Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:00.563Z","from":"Service A"}}
+[2026-04-03T09:02:00.565Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:02:00.566Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:00.566Z","from":"Service A"}}
+[2026-04-03T09:02:00.571Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:02:00.572Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:02:10.567Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:02:10.571Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:10.571Z","from":"Service A"}}
+[2026-04-03T09:02:10.573Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:02:10.574Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:10.574Z","from":"Service A"}}
+[2026-04-03T09:02:10.578Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:02:10.579Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:02:20.591Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:02:20.593Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:20.592Z","from":"Service A"}}
+[2026-04-03T09:02:20.600Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:02:20.601Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:20.601Z","from":"Service A"}}
+[2026-04-03T09:02:20.605Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:02:20.607Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:02:30.597Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:02:30.598Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:30.598Z","from":"Service A"}}
+[2026-04-03T09:02:30.599Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:02:30.600Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:30.600Z","from":"Service A"}}
+[2026-04-03T09:02:30.603Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:02:30.604Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:02:40.597Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:02:40.599Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:40.599Z","from":"Service A"}}
+[2026-04-03T09:02:40.602Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:02:40.603Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:40.603Z","from":"Service A"}}
+[2026-04-03T09:02:40.606Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:02:40.607Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:02:50.607Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:02:50.610Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:50.610Z","from":"Service A"}}
+[2026-04-03T09:02:50.612Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:02:50.613Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:02:50.613Z","from":"Service A"}}
+[2026-04-03T09:02:50.618Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:02:50.620Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:03:00.615Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:03:00.615Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:00.615Z","from":"Service A"}}
+[2026-04-03T09:03:00.617Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:03:00.618Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:00.618Z","from":"Service A"}}
+[2026-04-03T09:03:00.622Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:03:00.624Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:03:10.626Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:03:10.627Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:10.627Z","from":"Service A"}}
+[2026-04-03T09:03:10.631Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:03:10.631Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:10.631Z","from":"Service A"}}
+[2026-04-03T09:03:10.635Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:03:10.636Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:03:20.643Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:03:20.644Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:20.644Z","from":"Service A"}}
+[2026-04-03T09:03:20.649Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:03:20.650Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:20.650Z","from":"Service A"}}
+[2026-04-03T09:03:20.661Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:03:20.664Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:03:30.646Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:03:30.647Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:30.647Z","from":"Service A"}}
+[2026-04-03T09:03:30.649Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:03:30.650Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:30.650Z","from":"Service A"}}
+[2026-04-03T09:03:30.654Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:03:30.656Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:03:40.647Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:03:40.648Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:40.648Z","from":"Service A"}}
+[2026-04-03T09:03:40.651Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:03:40.653Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:40.653Z","from":"Service A"}}
+[2026-04-03T09:03:40.656Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:03:40.658Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:03:50.658Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:03:50.659Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:50.659Z","from":"Service A"}}
+[2026-04-03T09:03:50.662Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:03:50.663Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:03:50.663Z","from":"Service A"}}
+[2026-04-03T09:03:50.685Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:03:50.691Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:04:00.673Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:04:00.673Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:00.673Z","from":"Service A"}}
+[2026-04-03T09:04:00.675Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:04:00.676Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:00.676Z","from":"Service A"}}
+[2026-04-03T09:04:00.678Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:04:00.679Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:04:10.675Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:04:10.676Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:10.676Z","from":"Service A"}}
+[2026-04-03T09:04:10.679Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:04:10.680Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:10.680Z","from":"Service A"}}
+[2026-04-03T09:04:10.683Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:04:10.684Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:04:20.686Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:04:20.689Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:20.689Z","from":"Service A"}}
+[2026-04-03T09:04:20.690Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:04:20.691Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:20.691Z","from":"Service A"}}
+[2026-04-03T09:04:20.696Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:04:20.698Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:04:30.692Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:04:30.693Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:30.693Z","from":"Service A"}}
+[2026-04-03T09:04:30.695Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:04:30.696Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:30.696Z","from":"Service A"}}
+[2026-04-03T09:04:30.699Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:04:30.700Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:04:40.705Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:04:40.706Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:40.706Z","from":"Service A"}}
+[2026-04-03T09:04:40.708Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:04:40.709Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:40.709Z","from":"Service A"}}
+[2026-04-03T09:04:40.713Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:04:40.714Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:04:50.719Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:04:50.720Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:50.720Z","from":"Service A"}}
+[2026-04-03T09:04:50.721Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:04:50.722Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:04:50.722Z","from":"Service A"}}
+[2026-04-03T09:04:50.724Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:04:50.725Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:05:00.723Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:05:00.724Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:00.724Z","from":"Service A"}}
+[2026-04-03T09:05:00.726Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:05:00.727Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:00.727Z","from":"Service A"}}
+[2026-04-03T09:05:00.730Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:05:00.731Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:05:10.733Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:05:10.735Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:10.735Z","from":"Service A"}}
+[2026-04-03T09:05:10.738Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:05:10.738Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:10.738Z","from":"Service A"}}
+[2026-04-03T09:05:10.742Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:05:10.743Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:05:20.743Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:05:20.744Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:20.744Z","from":"Service A"}}
+[2026-04-03T09:05:20.747Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:05:20.747Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:20.747Z","from":"Service A"}}
+[2026-04-03T09:05:20.750Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:05:20.751Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:05:30.759Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:05:30.760Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:30.760Z","from":"Service A"}}
+[2026-04-03T09:05:30.761Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:05:30.762Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:30.762Z","from":"Service A"}}
+[2026-04-03T09:05:30.765Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:05:30.781Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:05:40.768Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:05:40.769Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:40.769Z","from":"Service A"}}
+[2026-04-03T09:05:40.771Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:05:40.771Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:40.771Z","from":"Service A"}}
+[2026-04-03T09:05:40.774Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:05:40.775Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:05:50.788Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:05:50.789Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:50.789Z","from":"Service A"}}
+[2026-04-03T09:05:50.793Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:05:50.795Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:05:50.795Z","from":"Service A"}}
+[2026-04-03T09:05:50.801Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:05:50.803Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:06:00.803Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:06:00.804Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:00.804Z","from":"Service A"}}
+[2026-04-03T09:06:00.806Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:06:00.807Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:00.807Z","from":"Service A"}}
+[2026-04-03T09:06:00.810Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:06:00.811Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:06:10.811Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:06:10.812Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:10.812Z","from":"Service A"}}
+[2026-04-03T09:06:10.816Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:06:10.817Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:10.817Z","from":"Service A"}}
+[2026-04-03T09:06:10.819Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:06:10.821Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:06:20.814Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:06:20.816Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:20.816Z","from":"Service A"}}
+[2026-04-03T09:06:20.818Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:06:20.819Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:20.819Z","from":"Service A"}}
+[2026-04-03T09:06:20.824Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:06:20.827Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:06:30.825Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:06:30.826Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:30.826Z","from":"Service A"}}
+[2026-04-03T09:06:30.828Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:06:30.829Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:30.829Z","from":"Service A"}}
+[2026-04-03T09:06:30.831Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:06:30.832Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:06:40.837Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:06:40.838Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:40.838Z","from":"Service A"}}
+[2026-04-03T09:06:40.840Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:06:40.841Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:40.841Z","from":"Service A"}}
+[2026-04-03T09:06:40.848Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:06:40.850Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:06:50.851Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:06:50.852Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:50.852Z","from":"Service A"}}
+[2026-04-03T09:06:50.855Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:06:50.856Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:06:50.856Z","from":"Service A"}}
+[2026-04-03T09:06:50.859Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:06:50.860Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:07:00.862Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:07:00.867Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:00.867Z","from":"Service A"}}
+[2026-04-03T09:07:00.870Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:07:00.871Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:00.871Z","from":"Service A"}}
+[2026-04-03T09:07:00.875Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:07:00.876Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:07:10.872Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:07:10.874Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:10.874Z","from":"Service A"}}
+[2026-04-03T09:07:10.876Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:07:10.877Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:10.877Z","from":"Service A"}}
+[2026-04-03T09:07:10.879Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:07:10.880Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:07:20.876Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:07:20.877Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:20.877Z","from":"Service A"}}
+[2026-04-03T09:07:20.879Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:07:20.879Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:20.879Z","from":"Service A"}}
+[2026-04-03T09:07:20.882Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:07:20.884Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:07:30.882Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:07:30.883Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:30.883Z","from":"Service A"}}
+[2026-04-03T09:07:30.885Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:07:30.886Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:30.886Z","from":"Service A"}}
+[2026-04-03T09:07:30.891Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:07:30.892Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:07:40.887Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:07:40.888Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:40.888Z","from":"Service A"}}
+[2026-04-03T09:07:40.890Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:07:40.891Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:40.891Z","from":"Service A"}}
+[2026-04-03T09:07:40.893Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:07:40.894Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:07:50.896Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:07:50.897Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:50.897Z","from":"Service A"}}
+[2026-04-03T09:07:50.899Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:07:50.899Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:07:50.899Z","from":"Service A"}}
+[2026-04-03T09:07:50.903Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:07:50.904Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:08:00.907Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:08:00.908Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:00.908Z","from":"Service A"}}
+[2026-04-03T09:08:00.911Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:08:00.912Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:00.912Z","from":"Service A"}}
+[2026-04-03T09:08:00.915Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:08:00.921Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:08:10.923Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:08:10.924Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:10.924Z","from":"Service A"}}
+[2026-04-03T09:08:10.936Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:08:10.937Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:10.937Z","from":"Service A"}}
+[2026-04-03T09:08:10.940Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:08:10.942Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:08:20.935Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:08:20.935Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:20.935Z","from":"Service A"}}
+[2026-04-03T09:08:20.939Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:08:20.940Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:20.940Z","from":"Service A"}}
+[2026-04-03T09:08:20.943Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:08:20.945Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:08:30.943Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:08:30.945Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:30.945Z","from":"Service A"}}
+[2026-04-03T09:08:30.947Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:08:30.949Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:30.949Z","from":"Service A"}}
+[2026-04-03T09:08:30.953Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:08:30.955Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:08:40.562Z] [Service-A] [INFO] [MAIN] Service A started - pinging Service B and Service C every 10 seconds
+[2026-04-03T09:08:40.564Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:08:40.566Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:40.566Z","from":"Service A"}}
+[2026-04-03T09:08:40.597Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:08:40.598Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:40.598Z","from":"Service A"}}
+[2026-04-03T09:08:40.944Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:08:40.945Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:40.945Z","from":"Service A"}}
+[2026-04-03T09:08:40.946Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:08:40.947Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:40.947Z","from":"Service A"}}
+[2026-04-03T09:08:40.950Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:08:40.951Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:08:50.964Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:08:50.965Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:50.965Z","from":"Service A"}}
+[2026-04-03T09:08:50.966Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:08:50.967Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:08:50.967Z","from":"Service A"}}
+[2026-04-03T09:08:50.970Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:08:50.972Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:09:00.964Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:09:00.965Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:00.965Z","from":"Service A"}}
+[2026-04-03T09:09:00.967Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:09:00.967Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:00.967Z","from":"Service A"}}
+[2026-04-03T09:09:00.972Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:09:00.973Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:09:10.978Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:09:10.982Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:10.982Z","from":"Service A"}}
+[2026-04-03T09:09:10.983Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:09:10.984Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:10.984Z","from":"Service A"}}
+[2026-04-03T09:09:10.986Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:09:10.988Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:09:20.987Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:09:20.997Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:20.997Z","from":"Service A"}}
+[2026-04-03T09:09:21.000Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:09:21.001Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:21.001Z","from":"Service A"}}
+[2026-04-03T09:09:21.004Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:09:21.009Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:09:30.997Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:09:30.998Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:30.998Z","from":"Service A"}}
+[2026-04-03T09:09:31.000Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:09:31.001Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:31.001Z","from":"Service A"}}
+[2026-04-03T09:09:31.004Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:09:31.005Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:09:41.013Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:09:41.014Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:41.014Z","from":"Service A"}}
+[2026-04-03T09:09:41.016Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:09:41.018Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:41.018Z","from":"Service A"}}
+[2026-04-03T09:09:41.022Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:09:41.024Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:09:51.017Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:09:51.018Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:51.018Z","from":"Service A"}}
+[2026-04-03T09:09:51.020Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:09:51.021Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:09:51.021Z","from":"Service A"}}
+[2026-04-03T09:09:51.024Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:09:51.025Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:10:01.028Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:10:01.029Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:01.029Z","from":"Service A"}}
+[2026-04-03T09:10:01.033Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:10:01.033Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:01.033Z","from":"Service A"}}
+[2026-04-03T09:10:01.037Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:10:01.039Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:10:11.038Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:10:11.039Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:11.039Z","from":"Service A"}}
+[2026-04-03T09:10:11.041Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:10:11.042Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:11.042Z","from":"Service A"}}
+[2026-04-03T09:10:11.046Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:10:11.047Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:10:21.049Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:10:21.050Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:21.050Z","from":"Service A"}}
+[2026-04-03T09:10:21.053Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:10:21.053Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:21.053Z","from":"Service A"}}
+[2026-04-03T09:10:21.057Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:10:21.059Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:10:31.051Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:10:31.052Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:31.052Z","from":"Service A"}}
+[2026-04-03T09:10:31.053Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:10:31.054Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:31.054Z","from":"Service A"}}
+[2026-04-03T09:10:31.056Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:10:31.057Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:10:41.052Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:10:41.052Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:41.052Z","from":"Service A"}}
+[2026-04-03T09:10:41.056Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:10:41.057Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:41.057Z","from":"Service A"}}
+[2026-04-03T09:10:41.060Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:10:41.062Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:10:51.062Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:10:51.063Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:51.063Z","from":"Service A"}}
+[2026-04-03T09:10:51.065Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:10:51.066Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:10:51.066Z","from":"Service A"}}
+[2026-04-03T09:10:51.069Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:10:51.070Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:11:01.070Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:11:01.071Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:01.071Z","from":"Service A"}}
+[2026-04-03T09:11:01.073Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:11:01.073Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:01.073Z","from":"Service A"}}
+[2026-04-03T09:11:01.077Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:11:01.078Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:11:11.088Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:11:11.089Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:11.089Z","from":"Service A"}}
+[2026-04-03T09:11:11.091Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:11:11.092Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:11.092Z","from":"Service A"}}
+[2026-04-03T09:11:11.102Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:11:11.104Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:11:21.092Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:11:21.093Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:21.093Z","from":"Service A"}}
+[2026-04-03T09:11:21.096Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:11:21.098Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:21.098Z","from":"Service A"}}
+[2026-04-03T09:11:21.101Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:11:21.102Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:11:31.096Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:11:31.096Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:31.096Z","from":"Service A"}}
+[2026-04-03T09:11:31.098Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:11:31.099Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:31.099Z","from":"Service A"}}
+[2026-04-03T09:11:31.101Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:11:31.102Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:11:41.110Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:11:41.111Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:41.111Z","from":"Service A"}}
+[2026-04-03T09:11:41.113Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:11:41.114Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:41.114Z","from":"Service A"}}
+[2026-04-03T09:11:41.116Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:11:41.118Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:11:51.123Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:11:51.124Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:51.124Z","from":"Service A"}}
+[2026-04-03T09:11:51.126Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:11:51.127Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:11:51.127Z","from":"Service A"}}
+[2026-04-03T09:11:51.131Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:11:51.132Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:12:01.135Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:12:01.136Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:12:01.136Z","from":"Service A"}}
+[2026-04-03T09:12:01.138Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:12:01.139Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:12:01.139Z","from":"Service A"}}
+[2026-04-03T09:12:01.143Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:12:01.144Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:12:11.146Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:12:11.148Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:12:11.148Z","from":"Service A"}}
+[2026-04-03T09:12:11.150Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:12:11.150Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:12:11.150Z","from":"Service A"}}
+[2026-04-03T09:12:11.153Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:12:11.154Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:14:19.736Z] [Service-A] [INFO] [MAIN] Service A started - pinging Service B and Service C every 10 seconds
+[2026-04-03T09:14:19.738Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:14:19.738Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:19.738Z","from":"Service A"}}
+[2026-04-03T09:14:19.767Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:14:19.768Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:19.768Z","from":"Service A"}}
+[2026-04-03T09:14:19.771Z] [Service-A] [INFO] [SERVICE] Service-A started | {"port":3030}
+[2026-04-03T09:14:19.778Z] [Service-A] [WARN] [CONNECTION] Service B is down, retrying... | {"target":"Service B","code":"ECONNREFUSED"}
+[2026-04-03T09:14:19.780Z] [Service-A] [WARN] [CONNECTION] Service C is down, retrying... | {"target":"Service C","code":"ECONNREFUSED"}
+[2026-04-03T09:14:24.635Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:14:24.535Z"}}
+[2026-04-03T09:14:24.638Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:14:24.638Z"}}
+[2026-04-03T09:14:29.737Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:14:29.738Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:29.738Z","from":"Service A"}}
+[2026-04-03T09:14:29.741Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:14:29.742Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:29.742Z","from":"Service A"}}
+[2026-04-03T09:14:29.781Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:14:29.772Z"}}
+[2026-04-03T09:14:29.784Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:14:29.776Z"}}
+[2026-04-03T09:14:34.549Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:14:34.543Z"}}
+[2026-04-03T09:14:34.550Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:14:34.550Z"}}
+[2026-04-03T09:14:39.742Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:14:39.746Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:39.746Z","from":"Service A"}}
+[2026-04-03T09:14:39.751Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:14:39.752Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:39.751Z","from":"Service A"}}
+[2026-04-03T09:14:39.768Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:14:39.760Z"}}
+[2026-04-03T09:14:39.770Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:14:39.761Z"}}
+[2026-04-03T09:14:44.560Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:14:44.555Z"}}
+[2026-04-03T09:14:44.561Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:14:44.561Z"}}
+[2026-04-03T09:14:49.750Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:14:49.751Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:49.751Z","from":"Service A"}}
+[2026-04-03T09:14:49.753Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:14:49.754Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:49.754Z","from":"Service A"}}
+[2026-04-03T09:14:49.769Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:14:49.763Z"}}
+[2026-04-03T09:14:49.771Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:14:49.762Z"}}
+[2026-04-03T09:14:54.599Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:14:54.571Z"}}
+[2026-04-03T09:14:54.603Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:14:54.603Z"}}
+[2026-04-03T09:14:59.758Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:14:59.759Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:59.759Z","from":"Service A"}}
+[2026-04-03T09:14:59.763Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:14:59.765Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:14:59.765Z","from":"Service A"}}
+[2026-04-03T09:14:59.789Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:14:59.779Z"}}
+[2026-04-03T09:14:59.795Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:14:59.780Z"}}
+[2026-04-03T09:15:04.578Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:15:04.574Z"}}
+[2026-04-03T09:15:04.579Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:15:04.579Z"}}
+[2026-04-03T09:15:09.758Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:15:09.759Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:09.759Z","from":"Service A"}}
+[2026-04-03T09:15:09.762Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:15:09.763Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:09.763Z","from":"Service A"}}
+[2026-04-03T09:15:09.776Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:15:09.769Z"}}
+[2026-04-03T09:15:09.778Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:15:09.769Z"}}
+[2026-04-03T09:15:14.592Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:15:14.585Z"}}
+[2026-04-03T09:15:14.594Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:15:14.594Z"}}
+[2026-04-03T09:15:19.771Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:15:19.773Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:19.773Z","from":"Service A"}}
+[2026-04-03T09:15:19.775Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:15:19.775Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:19.775Z","from":"Service A"}}
+[2026-04-03T09:15:19.788Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:15:19.781Z"}}
+[2026-04-03T09:15:19.790Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:15:19.781Z"}}
+[2026-04-03T09:15:24.594Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:15:24.588Z"}}
+[2026-04-03T09:15:24.595Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:15:24.595Z"}}
+[2026-04-03T09:15:29.774Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:15:29.775Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:29.775Z","from":"Service A"}}
+[2026-04-03T09:15:29.777Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:15:29.778Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:29.778Z","from":"Service A"}}
+[2026-04-03T09:15:29.791Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:15:29.785Z"}}
+[2026-04-03T09:15:29.793Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:15:29.785Z"}}
+[2026-04-03T09:15:34.603Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:15:34.596Z"}}
+[2026-04-03T09:15:34.604Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:15:34.604Z"}}
+[2026-04-03T09:15:39.779Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:15:39.780Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:39.780Z","from":"Service A"}}
+[2026-04-03T09:15:39.782Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:15:39.783Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:39.783Z","from":"Service A"}}
+[2026-04-03T09:15:39.797Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:15:39.788Z"}}
+[2026-04-03T09:15:39.798Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:15:39.789Z"}}
+[2026-04-03T09:15:44.616Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:15:44.610Z"}}
+[2026-04-03T09:15:44.617Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:15:44.617Z"}}
+[2026-04-03T09:15:49.787Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:15:49.788Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:49.788Z","from":"Service A"}}
+[2026-04-03T09:15:49.790Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:15:49.791Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:49.791Z","from":"Service A"}}
+[2026-04-03T09:15:49.805Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:15:49.798Z"}}
+[2026-04-03T09:15:49.808Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:15:49.797Z"}}
+[2026-04-03T09:15:54.626Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:15:54.617Z"}}
+[2026-04-03T09:15:54.627Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:15:54.627Z"}}
+[2026-04-03T09:15:59.793Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:15:59.795Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:59.795Z","from":"Service A"}}
+[2026-04-03T09:15:59.797Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:15:59.798Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:15:59.798Z","from":"Service A"}}
+[2026-04-03T09:15:59.812Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:15:59.805Z"}}
+[2026-04-03T09:15:59.814Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:15:59.806Z"}}
+[2026-04-03T09:16:04.635Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:16:04.630Z"}}
+[2026-04-03T09:16:04.636Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:16:04.636Z"}}
+[2026-04-03T09:16:09.801Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:16:09.802Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:16:09.802Z","from":"Service A"}}
+[2026-04-03T09:16:09.805Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:16:09.807Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:16:09.807Z","from":"Service A"}}
+[2026-04-03T09:16:09.820Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:16:09.813Z"}}
+[2026-04-03T09:16:09.824Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:16:09.814Z"}}
+[2026-04-03T09:16:13.046Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"From C to A","timestamp":"2026-04-03T09:16:13.042Z"}}
+[2026-04-03T09:16:13.047Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:16:13.047Z"}}
+[2026-04-03T09:16:14.638Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:16:14.633Z"}}
+[2026-04-03T09:16:14.639Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:16:14.639Z"}}
+[2026-04-03T09:16:19.811Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:16:19.812Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:16:19.812Z","from":"Service A"}}
+[2026-04-03T09:16:19.815Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:16:19.816Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:16:19.816Z","from":"Service A"}}
+[2026-04-03T09:16:19.828Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:16:19.821Z"}}
+[2026-04-03T09:16:19.829Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:16:19.822Z"}}
+[2026-04-03T09:16:24.644Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:16:24.639Z"}}
+[2026-04-03T09:16:24.645Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:16:24.645Z"}}
+[2026-04-03T09:16:29.825Z] [Service-A] [INFO] [PING] Pinging Service B | {"target":"Service B"}
+[2026-04-03T09:16:29.826Z] [Service-A] [INFO] [OUTGOING] Sending to Service B | {"target":"Service B","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:16:29.826Z","from":"Service A"}}
+[2026-04-03T09:16:29.829Z] [Service-A] [INFO] [PING] Pinging Service C | {"target":"Service C"}
+[2026-04-03T09:16:29.829Z] [Service-A] [INFO] [OUTGOING] Sending to Service C | {"target":"Service C","endpoint":"/ping","payload":{"message":"Ping from Service A","timestamp":"2026-04-03T09:16:29.829Z","from":"Service A"}}
+[2026-04-03T09:16:29.841Z] [Service-A] [INFO] [RESPONSE] Response from Service B | {"source":"Service B","data":{"reply":"Pong from Service B","receivedAt":"2026-04-03T09:16:29.835Z"}}
+[2026-04-03T09:16:29.844Z] [Service-A] [INFO] [RESPONSE] Response from Service C | {"source":"Service C","data":{"reply":"Pong from Service C","receivedAt":"2026-04-03T09:16:29.836Z"}}
+[2026-04-03T09:16:34.654Z] [Service-A] [INFO] [INCOMING] Received from Service C | {"source":"Service C","data":{"message":"Ping from Service C","timestamp":"2026-04-03T09:16:34.649Z"}}
+[2026-04-03T09:16:34.655Z] [Service-A] [INFO] [RESPONSE_SENT] Sent response to Service C | {"target":"Service C","data":{"reply":"Pong from Service A","receivedAt":"2026-04-03T09:16:34.654Z"}}

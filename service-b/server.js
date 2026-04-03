@@ -55,16 +55,6 @@ app.get('/api/messages', async (req, res) => {
   }
 });
 
-app.post('/api/ping', async (req, res) => {
-  const { target } = req.body;
-  if (target === 'Service C') {
-    await pingServiceC();
-    res.json({ success: true, target: 'Service C' });
-  } else {
-    res.status(400).json({ error: 'Invalid target' });
-  }
-});
-
 app.post('/api/ping/start', (req, res) => {
   if (pingInterval) {
     return res.json({ status: 'already running' });

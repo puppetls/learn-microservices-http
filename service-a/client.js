@@ -44,7 +44,6 @@ app.get('/api/status', async (req, res) => {
     intervalRunning: pingInterval !== null
   });
 });
-});
 
 app.get('/api/messages', async (req, res) => {
   const limit = parseInt(req.query.limit) || 50;
@@ -53,32 +52,6 @@ app.get('/api/messages', async (req, res) => {
     res.json(messages);
   } catch (error) {
     res.status(500).json({ error: error.message });
-  }
-});
-
-app.post('/api/ping', async (req, res) => {
-  const { target } = req.body;
-  if (target === 'Service B') {
-    await pingServiceB();
-    res.json({ success: true, target: 'Service B' });
-  } else if (target === 'Service C') {
-    await pingServiceC();
-    res.json({ success: true, target: 'Service C' });
-  } else {
-    res.status(400).json({ error: 'Invalid target' });
-  }
-});
-
-app.post('/api/ping', async (req, res) => {
-  const { target } = req.body;
-  if (target === 'Service B') {
-    await pingServiceB();
-    res.json({ success: true, target: 'Service B' });
-  } else if (target === 'Service C') {
-    await pingServiceC();
-    res.json({ success: true, target: 'Service C' });
-  } else {
-    res.status(400).json({ error: 'Invalid target' });
   }
 });
 
