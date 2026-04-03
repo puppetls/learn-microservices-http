@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Control Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="service-title">Service Control Panel</h1>
+    <div class="status-panel">
+      <div class="status-item">
+        <span class="label">Service:</span>
+        <span id="service-name">Loading...</span>
+      </div>
+      <div class="status-item">
+        <span class="label">Port:</span>
+        <span id="service-port">-</span>
+      </div>
+      <div class="status-item">
+        <span class="label">Targets:</span>
+        <span id="service-targets">-</span>
+      </div>
+      <div class="status-item">
+        <span class="label">Pinging:</span>
+        <span id="pinging-status">-</span>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="btn btn-success">Start Pinging</button>
+      <button id="stop-btn" class="btn btn-danger">Stop Pinging</button>
+    </div>
+    <div class="custom-ping">
+      <h2>Custom Ping</h2>
+      <div class="form-group">
+        <label for="target-select">Target:</label>
+        <select id="target-select"></select>
+      </div>
+      <div class="form-group">
+        <label for="message-input">Message:</label>
+        <input type="text" id="message-input" placeholder="Enter custom message">
+      </div>
+      <button id="custom-ping-btn" class="btn btn-primary">Send Ping</button>
+    </div>
+    <div class="messages">
+      <h2>Recent Messages</h2>
+      <button id="refresh-messages" class="btn btn-secondary">Refresh</button>
+      <div id="messages-list"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
